@@ -10,7 +10,7 @@ public class Class1
        
         var myListOfIntegers = new List<int>();
      
-
+        // getting random number
         for (int i = 0; i < 20; i++)
         {
             myListOfIntegers.Add(rand.Next(1,51));
@@ -23,6 +23,8 @@ public class Class1
         }
         Console.WriteLine();
 
+
+        // getting square numbers
         var randomIntegers = new List<int>();
         foreach(int randomNumber in myListOfIntegers)
         {
@@ -30,7 +32,6 @@ public class Class1
             randomIntegers.Add(squaredRoot);
            
         }
-        Console.WriteLine();
 
         foreach (int randomNumber in randomIntegers)
         {
@@ -39,6 +40,7 @@ public class Class1
         }
         Console.WriteLine();
 
+        // getting even numbers
         var evenNumbers = new List<int>();
         foreach (int squarednumber in randomIntegers)
         {
@@ -46,7 +48,6 @@ public class Class1
             {
                 evenNumbers.Add(squarednumber);
             }
-            //console.writeline(evennumbers);
         }
 
         foreach (int squaredNumber in evenNumbers)
@@ -55,7 +56,6 @@ public class Class1
 
         }
 
-        // Console.WriteLine(evenNumbers);
         Console.ReadLine();
     }
 }
